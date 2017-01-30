@@ -1,0 +1,201 @@
+/******** BLINK *********/
+.blinking{
+  font-size: 25px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+/********** GENERAL ***********/
+body {
+  background-color: #333;
+  height: 100%;
+}
+
+*{
+  font-family: 'Lato', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none; 
+}
+
+/******* ABOUT *****/
+#aboutFrame{
+  background-color: #ff5c33;
+  width: 220px;
+  height: 100px;
+  border: 2px solid #ff5c33;
+  position: fixed;
+  top: 43px;
+  left: 40px;
+  display: none;
+}
+
+#aboutSlider{
+  background-color: #ff5c33;
+  width:220px;
+  height:35px;
+  border: 2px solid #ff5c33;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  cursor: pointer;
+}
+
+#aboutFrame p, #aboutSlider p{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
+/********** OPTIONS ***********/
+#optionsFrame{
+  background-color: #ff5c33;
+  width: 220px;
+  height: 210px;
+  border: 2px solid #ff5c33;
+  position: fixed;
+  top: 43px;
+  right: 40px;
+  display: none;
+}
+
+#optionsSlider{
+  background-color: #ff5c33;
+  width:220px;
+  height:35px;
+  border: 2px solid #ff5c33;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  cursor: pointer;
+}
+
+#optionsFrame p, #optionsSlider p{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
+#optionsFrame p{
+  margin: 10px;
+}
+
+#redTheme, #blueTheme, #greenTheme, #funkyOneTheme, #funkyTwoTheme{
+  cursor: pointer;
+}
+
+/********* CALCULATOR *********/
+#calcFrame{
+  width: 410px;
+  height: 510px;
+  background-color: #ff8989;
+  background-image: -webkit-linear-gradient(left top, #ff5c33, #ff8989);
+  background-image:    -moz-linear-gradient(bottom right, #ff5c33, #ff8989);
+  background-image:      -o-linear-gradient(bottom right, #ff5c33, #ff8989); 
+  background-image:         linear-gradient(to bottom right, #ff5c33, #ff8989);
+  margin: 75px auto;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+#outputArea{
+  height: 76px;
+  width: 407px;
+  text-align: right;
+  position: absolute;
+  top: 120px;
+  line-height: 70px;
+}
+
+#currentChain{
+  height: 50px;
+  width: 391px;
+  top: 50px;
+  text-align: left;
+  display: inline-block;
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+#buttons{
+    position: absolute;
+    top: 205px;
+    width: 410px;
+}
+
+#buttons div{
+  display: inline-block;
+  width: 100px;
+  height: 75px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+#buttons div:hover{
+  /*background-color: #ff3333;*/
+  /*box-shadow: 0px 0px 5px #fff;*/
+  opacity: 0.2;
+}

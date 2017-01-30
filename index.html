@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- google font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- js -->
+    <script type='text/javascript' src='calculator.js'></script>
+    <!-- math js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.min.js"></script>
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='calculator.css'>
+</head>
+<body>
+        
+    <!-- about -->
+    <div id='aboutSlider'>
+      <p>about</p>
+    </div>
+    <div id="aboutFrame">
+      <p>simple JS calculator</p>
+      <p>an FCC project</p>
+      <p>made by <a href='https://nugoose.github.io/' target='_blank'><strong>nugoose</strong></a></p>
+    </div>
+
+
+    <!-- options -->
+    <div id='optionsSlider'><p>options</p></div>
+    <div id='optionsFrame'>
+      <p>-- color themes --</p>
+      <p id='redTheme'>red (default)</p>
+      <p id='blueTheme'>blue</p>
+      <p id='greenTheme'>green</p>
+      <p id='funkyOneTheme'>funky one</p>
+      <p id='funkyTwoTheme'>funky two</p>
+    </div>
+
+    <!-- calculator frame -->
+    <div id="calcFrame">
+      <div id="currentChain"><p><span class="blinking">_</span></p></div>
+      <div id="outputArea"></div>
+      <div id="buttons">
+        <div id="leftParenthesis" class="nums"><p>(</p></div>
+          <div id="rightParenthesis" class="nums"><p>)</p></div>
+          <div id="allClear"><p>AC</p></div>
+          <div id="clearLast"><p>DEL</p></div>
+          <div id="numSeven" class="nums"><p>7</p></div>
+          <div id="numEight" class="nums"><p>8</p></div>
+          <div id="numNine" class="nums"><p>9</p></div>
+          <div id="division" class="operations"><p>/</p></div>
+          <div id="numFour" class="nums"><p>4</p></div>
+          <div id="numFive" class="nums"><p>5</p></div>
+          <div id="numSix" class="nums"><p>6</p></div>
+          <div id="multiply" class="operations"><p>x</p></div>
+          <div id="numOne" class="nums"><p>1</p></div>
+          <div id="numTwo" class="nums"><p>2</p></div>
+          <div id="numThree" class="nums"><p>3</p></div>
+          <div id="minus" class="operations"><p>-</p></div>
+          <div id="numZero" class="nums"><p>0</p></div>
+          <div id="decimal" class="nums"><p>.</p></div>
+          <div id="equals"><p>=</p></div>
+          <div id="addition" class="operations"><p>+</p></div>
+      </div>
+    </div>
+        
+</body>
+</html>
